@@ -12,23 +12,14 @@ header, .part {
     grid-template-columns: 1fr 1fr;
     margin-bottom: 20px;
 }
-/* .mobile-menu {
-    justify-self: end;
-    align-self: center;
-    cursor: pointer;
-    margin: 10px;
-}
-.mobile-menu>div {
-    width: 30px;
-    height: 5px;
-    background-color: gray;
-    margin: 3px 0;
-    border-radius: 5px;
-} */
 .desktop-menu {
     display: none;
 }
-
+.part-left p {
+    font-size: 14px; 
+    margin-left: 10px; 
+    color: gray;
+}
 .part-left h5 {
     font-size: 12px;
     color: #FF6AB1;
@@ -43,19 +34,20 @@ header, .part {
 }
 .part-right-top {
     align-self: center;
+    justify-self: center;
 }
 .part-right-top>img {
     width: 100%;
-    max-width: 400px;
-    max-height: 400px;
+    max-width: 600px;
+    max-height: 600px;
 }
 .part-right-bottom {
     justify-self: center;
 }
 .part-right-bottom>img {
-    width: 180px;
-    height: 410px;
-    object-fit: cover;
+    width: 100%;
+    max-width: 600px;
+    max-height: 600px;
 }
 button {
     border-radius: 20px;
@@ -167,6 +159,9 @@ button {
 }
 
 @media screen and (min-width: 450px) {
+    body {
+        margin: 10px;
+    }
     .second-bottom {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -174,11 +169,23 @@ button {
     .nft2 {
         display: block;
     }
-    .part-left h1, .second-top h1 {
+    .part-left h5 {
+        font-size: 14px;
+    }
+    .part-left p, .second-top p, .second-p p {
+        font-size: 16px; 
+    }
+    .part-left h1, .second-top h1, .second-p h1 {
         font-size: 45px;
     }
+    .second-top {
+        border-radius: 20px;
+    }
 }
-@media screen and (min-width: 650px) {
+@media screen and (min-width: 670px) {
+    body {
+        margin: 20px;
+    }
     .second-logo {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
@@ -195,7 +202,7 @@ button {
     }
     #bottom, footer {
         display: grid;
-        grid-template-columns: 2fr 1fr;
+        grid-template-columns: 1fr 1fr;
     }
     .bottom-right {
         display: grid;
@@ -222,11 +229,20 @@ button {
     .desktop-menu a:last-child {
         color: #FF6AB1;
     }
-    .part-left h1, .second-top h1 {
+    .part-left h5 {
+        font-size: 16px;
+    }
+    .part-left h1, .second-top h1, .second-p h1 {
         font-size: 50px;
+    }
+    .part-left p, .second-top p, .second-p p {
+        font-size: 20px;
     }
 }
 @media screen and (min-width: 800px) {
+    body {
+        margin: 30px;
+    }
     .second-logo {
         display: grid;
         grid-template-columns: repeat(5, 1fr);
@@ -238,7 +254,38 @@ button {
     .nft2, .nft3, .nft4 {
         display: block;
     }
-    .part-left h1, .second-top h1 {
+    .desktop-menu a {
+        font-size: 17px; 
+    }
+    .part-left h5 {
+        font-size: 18px;
+    }
+    .part-left p, .second-top p, .second-p p {
+        font-size: 22px; 
+    }
+    .part-left h1, .second-top h1, .second-p h1 {
         font-size: 55px;
+    }
+}
+@media screen and (min-width: 1200px) {
+    body {
+        margin: 50px;
+    }
+    .desktop-menu a {
+        font-size: 19px; 
+    }
+    .part-left h5 {
+        font-size: 20px;
+    }
+    .part-left p, .second-top p, .second-p p {
+        font-size: 25px; 
+    }
+    .part-left h1, .second-top h1, .second-p h1 {
+        font-size: 60px;
+    }
+}
+@media screen and (min-width: 1200px) {
+    body {
+        margin: 65px;
     }
 }
