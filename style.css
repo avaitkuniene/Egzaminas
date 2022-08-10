@@ -46,8 +46,8 @@ header, .part {
 }
 .part-right-top>img {
     width: 100%;
-    max-width: 350px;
-    max-height: 350px;
+    max-width: 400px;
+    max-height: 400px;
 }
 .part-right-bottom {
     justify-self: center;
@@ -171,6 +171,9 @@ button {
     .nft2 {
         display: block;
     }
+    .part-left h1, .second-top h1 {
+        font-size: 45px;
+    }
 }
 @media screen and (min-width: 650px) {
     .second-logo {
@@ -216,6 +219,9 @@ button {
     .desktop-menu a:last-child {
         color: #FF6AB1;
     }
+    .part-left h1, .second-top h1 {
+        font-size: 50px;
+    }
 }
 @media screen and (min-width: 800px) {
     .second-logo {
@@ -228,5 +234,8 @@ button {
     }
     .nft2, .nft3, .nft4 {
         display: block;
+    }
+    .part-left h1, .second-top h1 {
+        font-size: 55px;
     }
 }
