@@ -94,6 +94,9 @@ button {
 .second-logo div>img {
     height: 30px;
 }
+.second-logo div {
+    justify-self: center;
+}
 .second-logo div:nth-child(4) {
     display: none;
 }
@@ -192,7 +195,7 @@ button {
     }
     #bottom, footer {
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 2fr 1fr;
     }
     .bottom-right {
         display: grid;
