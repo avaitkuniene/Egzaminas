@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="mobile-menu.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -22,11 +23,26 @@
             <a href="#">Launch</a>
             <a href="#">Sign up</a>
         </div>
+        <!-- <div class="mobile-menu">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div> -->
+
         <div class="mobile-menu">
-            <div></div>
-            <div></div>
-            <div></div>
+            <input id="menu-toggle" type="checkbox" />
+            <label class="menu-btn" for="menu-toggle">
+                <span></span>
+            </label>
+        
+            <ul class="menu-box">
+                <li><a class="menu-item" href="#">Features</a></li>
+                <li><a class="menu-item" href="#">About</a></li>
+                <li><a class="menu-item" href="#">Launch</a></li>
+                <li><a class="menu-item" href="#" style="color: #FF6AB1;">Sign up</a></li>
+            </ul>
         </div>
+
     </header>
     <section class="part">
         <div class="part-left">
